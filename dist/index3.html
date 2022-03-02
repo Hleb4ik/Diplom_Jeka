@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ARM Fitness center</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="/animate.97a9d823.css">
+	<link rel="stylesheet" href="/main.c52e0fe2.css">
+	<link rel="stylesheet" href="/background.6761a0ca.css">
+<script src="/background.6761a0ca.js"></script></head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="main1 animated fadeInDown">
+				<h1>
+					АРМ администратора
+				</h1>
+				<h4>
+					Фитнес центр "Женьшень"
+				</h4>
+			</div>
+		</div>
+	</header>
+	<a id="link" href="/index.html">123</a>
+	<section class="learn">
+		<div class="container">
+			<div class="cont">
+				<div class="cont5">
+					<p>Список клиентов</p>
+					<div id="cli-table"></div>
+					<button type="button" class="btn upload-btn" data-bs-toggle="modal" data-bs-target="#exampleModalAdd-cli">Добавить</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="cont">
+				<div hidden="true" class="cont3">
+					<p>Смены</p>
+					<p>Возможно тут что-то будет*</p>
+				</div>
+				<div class="cont2">
+					<p>Клубные карты</p>
+					<div id="abon-table"></div>
+					<button type="button" class="btn upload-btn" data-bs-toggle="modal" data-bs-target="#exampleModalAdd-abon">добавить</button>
+				</div>
+			</div>
+			<div class="cont">
+				<div hidden="true" class="cont4">
+					<p>Смены 2.0</p>
+					<p>Возможно тут что-то будет*</p>
+				</div>
+				<div class="cont1">
+					<p>Посещение</p>
+					<div id="pos-table"></div>
+					<button type="button" class="btn upload-btn" data-bs-toggle="modal" data-bs-target="#exampleModalAdd">добавить</button>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-exit">Выход</button>
+	</section>
+<!-- Modal -->
+	<div class="modal fade" id="exampleModalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Посещение</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>ФИО</p>
+					<input type="text" id="FIO" class="form-control">
+					<!-- <p>Дата</p>
+					<input type="text" id="Date" class="form-control"> -->
+					<!-- <p>Время</p>
+					<input type="text" id="Time" class="form-control"> -->
+					<button class="btn" id="btn-addPos">Добавить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalAdd-abon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Новая клубная карта</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Название</p>
+					<input type="text" id="abon-name" class="form-control">
+					<p>Срок действия</p>
+					<input type="text" id="abon-sda" class="form-control">
+					<p>преимущества</p>
+					<input type="text" id="abon-prem" class="form-control">
+					<p>Цена</p>
+					<input type="text" id="price" class="form-control">
+					<button class="btn" id="btn-addAbon">Добавить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalAdd-cli" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Новый клиент</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>ФИО</p>
+					<input type="text" id="pFIO" class="form-control">
+					<p>Номер телефона</p>
+					<input type="text" id="phone" class="form-control">
+					<p>Клубная карта</p>
+					<input type="text" id="pAbon" class="form-control">
+					<p>Дата покупки</p>
+					<input type="text" id="dsale" class="form-control">
+					<p>Срок действия</p>
+					<input type="text" id="sda" class="form-control">
+					<button class="btn" id="btn-addCli">Добавить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="exampleModalEdt-cli" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Редактирование клиента</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>ФИО</p>
+					<input type="text" id="EpFIO" class="form-control">
+					<p>Номер телефона</p>
+					<input type="text" id="Ephone" class="form-control">
+					<p>Вид абонемента</p>
+					<input type="text" id="EpAbon" class="form-control">
+					<p>Дата покупки</p>
+					<input type="text" id="Edsale" class="form-control">
+					<p>Срок действия</p>
+					<input type="text" id="Esda" class="form-control">
+					<button class="btn" id="btn-edtCli">Редактировать</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Modal -->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<p class="credits">
+				© Все права защищены.
+			</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="/jquery-3.3.1.min.5cc80399.js"></script>
+	<script src="/app.c3f9f951.js"></script>
+</body>
+</html>

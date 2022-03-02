@@ -1,0 +1,24 @@
+{
+  "name": "diplomjeka",
+  "version": "1.0.0",
+  "description": "By Hlep4ik",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "serve": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "Hlep4ik",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "parcel-bundler": "^1.12.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "firebase": "^9.6.6"
+  }
+}

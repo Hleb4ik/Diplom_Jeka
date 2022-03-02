@@ -1,0 +1,16 @@
+body{
+    background: black url(https://img1.akspic.ru/originals/0/3/7/6/5/156730-uprazhnenie-fitness_centr-fizicheskaya_podgotovka-silovye_trenirovki-sustav-3840x2160.jpg);
+    color: white;
+    background-repeat: no-repeat;
+}
+.btn{
+    color: white;
+}
+.btn:hover{
+    color: rgb(201, 200, 200);
+}
+.cont1, .cont2, .cont3, .cont4, .cont5{
+    border: 1px solid white;
+}
+
+/*# sourceMappingURL=/background.6761a0ca.css.map */

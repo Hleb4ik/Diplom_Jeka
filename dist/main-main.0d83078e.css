@@ -1,0 +1,265 @@
+/*Общие стили*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+.container {
+	/* width: 1140px; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.cont{
+	width: 100%;
+}
+.coach{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	font-size: 16px;
+	box-shadow: 0px 21px 16px 0px rgba(6, 6, 6, 0.37);
+}
+.coach p{
+	margin: 10px;
+}
+.coach img{
+	top: auto;
+	bottom: 0;
+}
+.cont1, .cont2, .cont3, .cont4, .cont5{
+	width: 100%;
+	text-align: center;
+	border: 1px solid #000;
+}
+.btn-del{
+	background: transparent;
+	border: none;
+}
+.btn-exit{
+	margin-top: 70px;
+	margin-bottom: -70px;
+}
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+.animated {
+	opacity: 0;
+}
+.create{
+	text-align: center;
+}
+.box{
+	width: 100%;
+}
+.treners{
+	margin-top: 50px;
+}
+.black-card-fp{
+	height: auto;
+	padding-bottom: 30px;
+}
+.club-cards{
+	background: transparent;
+	background-color: transparent;
+}
+.t-list{
+	background: transparent;
+}
+.main1{
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+/*Общие стили*/
+
+
+
+/*блок стиля верхнего меню*/
+
+/*Градиент*/
+.header {
+	
+	background: rgba(237,15,7,1);
+	background: -moz-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,15,7,1)), color-stop(100%, rgba(159,32,171,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: linear-gradient(135deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed0f07', endColorstr='#9f20ab', GradientType=1 );
+
+
+	padding-top: 125px;
+	padding-bottom: 125px;
+	color: #fff;
+}
+.headerMain {
+	
+	background: rgba(237,15,7,1);
+	background: -moz-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,15,7,1)), color-stop(100%, rgba(159,32,171,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	background: linear-gradient(135deg, rgba(237,15,7,1) 0%, rgba(159,32,171,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed0f07', endColorstr='#9f20ab', GradientType=1 );
+
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #fff;
+}
+.headerMain{
+	background: #86cc05;
+}
+/*Градиент*/
+
+.carusel-img{
+	width: 600px;
+	/* text-align: left; */
+	box-shadow: 0px 21px 16px 0px rgba(6, 6, 6, 0.37);
+}
+.carusel-img-two{
+	width: 800px;
+	box-shadow: 0px 21px 16px 0px rgba(6, 6, 6, 0.37);
+}
+.black-card-fp{
+	box-shadow: 0px 21px 16px 0px rgba(6, 6, 6, 0.37);
+}
+.img-two{
+	display: flex;
+	justify-content: center;
+}
+img{
+	max-height: 400px;
+}
+.carusel-body{
+	display: flex;
+	justify-content: center;
+}
+.carusel-text{
+	/* text-align: right; */
+	max-width: 40%;
+	padding-left: 35px;
+	font-size: 20px;
+}
+.yandex-map{
+	/* height: 600px; */
+}
+.div-section{
+	padding-top: 50px;
+}
+.title-adv::after{
+	background: #86cc05;
+}
+.bottom-mini-title{
+	border-left: 2px solid #86cc05;
+}
+.top{
+	display: flex;
+}
+.bottom{
+	display: flex;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+
+}
+.main1{
+	font-size: 16px;
+	text-align: center;
+}
+.main1 a:hover{
+	color: #fff;
+}
+.main1 h1{
+	font-size: 24px;
+}
+/*  */
+/*блок стиля верхнего меню*/
+
+.cls{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 30px;
+}
+
+/*Секция 1*/
+.learn {
+	padding-top: 150px;
+	/* padding-bottom: 150px; */
+	text-align: center;
+}
+.contents{
+	text-align: center;
+}
+/*Секция 1*/
+
+/*Стиль для таблицы*/
+.learn table{
+	text-align: center;
+	margin: auto;
+}
+.learn tr, td{
+	font-size: 18px;
+	padding: 10px;
+	border-bottom: 2px solid #86cc05;
+	color: #fff;
+}
+.learn tr{
+	/* background: white; */
+	color: black;
+	text-align: center;
+}
+.learn td{
+	text-align: center;
+	/* background: white; */
+}
+.learn a{
+	color: black;
+}
+.learn h1{
+	text-align: center;
+}
+/*Стиль для таблицы*/
+
+.form{
+	text-align: center;
+}
+.div1{
+	padding-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Футер(последний блок)*/
+.footer {
+	padding: 33px 0;
+	background: rgb(38, 8, 46);
+	background: linear-gradient(45deg, #000 0%, #2d2c2c 99%);
+}
+.credits {
+	color: white;
+	font-size: 14px;
+	margin: 0;
+}
+/*Футер(последний блок)*/
+
+/*# sourceMappingURL=/main-main.0d83078e.css.map */
