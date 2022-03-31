@@ -126,10 +126,12 @@ if (!sessionStorage.getItem('Token')) {
   document.querySelector('#pos-table').innerHTML = "\n    <table class=\"table-pos\">\n        <tr>\n            <td>\u0424\u0418\u041E</td>\n            <td>\u0414\u0430\u0442\u0430</td>\n            <td>\u0412\u0440\u0435\u043C\u044F</td>\n        </tr>\n    </table>\n    ";
   document.querySelector('#abon-table').innerHTML = "\n    <table class=\"table-abon\">\n        <tr>\n            <td>\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435</td>\n            <td>\u0421\u0440\u043E\u043A \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F</td>\n            <td>\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430</td>\n            <td>\u0426\u0435\u043D\u0430</td>\n        </tr>\n    </table>\n    ";
   document.querySelector('#cli-table').innerHTML = "\n    <table class=\"table-cli\">\n        <tr>\n            <td>\u0424\u0418\u041E</td>\n            <td>\u041D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430</td>\n            <td>\u041A\u043B\u0443\u0431\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430</td>\n            <td>\u0414\u0430\u0442\u0430 \u043F\u043E\u043A\u0443\u043F\u043A\u0438</td>\n            <td>\u0421\u0440\u043E\u043A \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F</td>\n        </tr>\n    </table>\n    ";
+  document.querySelector('#request-table').innerHTML = "\n    <table class=\"table-request\">\n        <tr>\n            <td>\u0424\u0418\u041E</td>\n            <td>\u041D\u043E\u043C\u0435\u0440 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430</td>\n            <td>\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u043A\u043B\u0443\u0431\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430</td>\n            <td>\u0416\u0435\u043B\u0430\u0435\u043C\u044B\u0439 \u0442\u0440\u0435\u043D\u0435\u0440</td>\n        </tr>\n    </table>\n    ";
   getAbonData();
   getSmenData();
   getPosData();
   getClientsData();
+  getRequest();
   document.querySelector('#btn-addPos').addEventListener('click', function () {
     var dt = new Date();
     var date = null,
@@ -343,6 +345,16 @@ function delData(link, name) {
     return location.reload();
   });
 }
+
+function getRequest() {
+  return fetch('https://arm-fit-cent-default-rtdb.europe-west1.firebasedatabase.app/requests.json').then(function (response) {
+    return response.json();
+  }).then(function (response) {
+    Object.keys(response).map(function (key) {
+      document.querySelector('.table-request').innerHTML += "\n                <tr>\n                    <td>".concat(response[key].FIO, "</td>\n                    <td>").concat(response[key].phone, "</td>\n                    <td>").concat(response[key].card, "</td>\n                    <td>").concat(response[key].trener, "</td>\n                    <td><button style=\"color: green;\" class=\"btn-del\" data-name=\"").concat(key, "\" data-link=\"requests\">&#10004</button></td>\n                </tr>");
+    });
+  });
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -371,7 +383,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60641" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60636" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

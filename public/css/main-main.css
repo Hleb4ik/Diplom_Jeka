@@ -82,6 +82,42 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
 	justify-content: space-between;
 }
+.application{
+	box-shadow: 0px 21px 16px 0px rgba(6, 6, 6, 0.37);
+	border-radius: 7px;
+	padding: 20px;
+	width: 50%;
+	color: #fff;
+	background: linear-gradient(45deg, #000 0%, #2d2c2c 99%);
+}
+.application button{
+	background-color: #86cc05;
+	box-shadow: none;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.application button:hover{
+	background-color: #86cc05;
+	border-color: transparent;
+	box-shadow: none;
+}
+.modal-footer{
+	border-top: 1px solid #86cc05;
+}
+.modal-header{
+	border-bottom: 1px solid #86cc05;
+	margin-bottom: 20px;
+}
+.modal-header p{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+.form{
+	display: flex;
+	justify-content: center;
+}
 /*Общие стили*/
 
 

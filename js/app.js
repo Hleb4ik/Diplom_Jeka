@@ -33,10 +33,21 @@ if (!sessionStorage.getItem('Token')){
         </tr>
     </table>
     `
+    document.querySelector('#request-table').innerHTML = `
+    <table class="table-request">
+        <tr>
+            <td>ФИО</td>
+            <td>Номер телефона</td>
+            <td>Желаемая клубная карта</td>
+            <td>Желаемый тренер</td>
+        </tr>
+    </table>
+    `
     getAbonData()
     getSmenData()
     getPosData()
     getClientsData()
+    getRequest()
     
     document.querySelector('#btn-addPos').addEventListener('click', function(){
         const dt = new Date()
@@ -279,4 +290,21 @@ function delData(link, name){
     })
     .then(response => response.json())
     .then(response => location.reload())
+}
+
+function getRequest(){
+    return fetch ('https://arm-fit-cent-default-rtdb.europe-west1.firebasedatabase.app/requests.json')
+    .then(response => response.json())
+    .then(response => {
+        Object.keys(response).map(key => {
+            document.querySelector('.table-request').innerHTML += `
+                <tr>
+                    <td>${response[key].FIO}</td>
+                    <td>${response[key].phone}</td>
+                    <td>${response[key].card}</td>
+                    <td>${response[key].trener}</td>
+                    <td><button style="color: green;" class="btn-del" data-name="${key}" data-link="requests">&#10004</button></td>
+                </tr>`
+        })
+    })
 }

@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Градиент*/
 
+.cc{
+	color: white;
+}
+
 .carusel-img{
 	width: 600px;
 	/* text-align: left; */
@@ -167,6 +171,7 @@ img{
 .learn {
 	padding-top: 150px;
 	padding-bottom: 150px;
+	height: 100%;
 	text-align: center;
 }
 .contents{
@@ -213,7 +218,7 @@ img{
 
 /*Футер(последний блок)*/
 .footer {
-	padding: 33px 0;
+	padding: 40px 0;
 	background: rgb(38, 8, 46);
 	background: linear-gradient(45deg, #000 0%, #2d2c2c 99%);
 }
